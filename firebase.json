@@ -1,0 +1,36 @@
+{
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log"
+      ]
+    }
+  ],
+  "emulators": {
+    "functions": {
+      "host": "192.168.0.20",
+      "port": 5001
+    },
+    "firestore": {
+      "host": "192.168.0.20",
+      "port": 8080
+    },
+    "ui": {
+      "host": "192.168.0.20",
+      "enabled": true
+    },
+    "pubsub": {
+      "host": "192.168.0.20",
+      "port": 8085
+    }
+  }
+}
